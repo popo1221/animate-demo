@@ -1,0 +1,306 @@
+@import "fonts/Zcool-LengShuiXiaoQingKeGuDianTi/站酷冷水萧青刻古典体.css";
+@import "fonts/BigruixianRegularGB2.0/逼格锐线粗体简2.0.css";
+.font-Zcool-LengShuiXiaoQingKeGuDianTi {
+  font-family: "站酷冷水萧青刻古典体";
+}
+.font-BigruixianRegularGB2 {
+  font-family: "逼格锐线粗体简2.0";
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #090B26;
+}
+header {
+  height: 72px;
+  background: #000032;
+}
+.bannerBox {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 72px);
+  overflow: hidden;
+  --banner-vertical-base: 0.09259259vh;
+}
+@media (max-aspect-ratio: 1336 / 768) {
+  .bannerBox {
+    height: 57.48502994vw;
+    --banner-vertical-base: 0.05208333vw;
+  }
+}
+.bannerBackground {
+  width: 100%;
+  height: 100%;
+}
+.bannerBackground .shapeAnimation {
+  animation-name: shapeAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.bannerBackground .triangle {
+  position: absolute;
+  top: 45.85465711%;
+  left: 8.64583333%;
+  width: 6.51041667vw;
+  height: 5.57291667vw;
+  opacity: 0.7;
+}
+.bannerBackground .triangle path {
+  fill: #1864a4;
+}
+.bannerBackground .circle1 {
+  position: absolute;
+  top: 22.82497441%;
+  left: 19.32291667%;
+  width: 1.77083333vw;
+  height: 1.77083333vw;
+  background-color: #1864a4;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation-delay: 0.12s;
+}
+.bannerBackground .circle2 {
+  position: absolute;
+  top: 57.1136131%;
+  left: 23.02083333%;
+  width: 1.35416667vw;
+  height: 1.35416667vw;
+  background-color: #1864a4;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation-delay: 0.24s;
+}
+.bannerBackground .circle3 {
+  position: absolute;
+  top: 24.87205732%;
+  left: 27.39583333%;
+  width: 5.41666667vw;
+  height: 5.41666667vw;
+  background-color: #1864a4;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation-delay: 0.36s;
+}
+.bannerBackground .imgCircleAnimation {
+  animation-name: imgCircleAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.bannerBackground .imgCircle1 {
+  position: absolute;
+  top: 2.14943705%;
+  left: 39.58333333%;
+  width: 48.48958333vw;
+  height: 48.33333333vw;
+  width: calc(931 * var(--banner-vertical-base));
+  height: calc(928 * var(--banner-vertical-base));
+  animation-name: imgCircleAnimation;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0.66);
+  animation-iteration-count: infinite;
+}
+.bannerBackground .imgCircle2 {
+  position: absolute;
+  top: 5.32241556%;
+  left: 41.51041667%;
+  width: 44.79166667vw;
+  height: 44.94791667vw;
+  width: calc(860 * var(--banner-vertical-base));
+  height: calc(863 * var(--banner-vertical-base));
+  animation-name: imgCircleAnimation;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1.06);
+  animation-iteration-count: infinite;
+}
+.bannerBackground .imgCircle3 {
+  position: absolute;
+  top: 10.23541453%;
+  left: 43.90625%;
+  width: 40.3125vw;
+  height: 40.26041667vw;
+  width: calc(774 * var(--banner-vertical-base));
+  height: calc(773 * var(--banner-vertical-base));
+  animation-name: imgCircleAnimation;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(0.36, 0, 0.52, 0.78);
+  animation-iteration-count: infinite;
+}
+.bannerBackground .imgCircle4 {
+  position: absolute;
+  top: 15.86489253%;
+  left: 46.35416667%;
+  width: 40.10416667vw;
+  height: 39.89583333vw;
+  width: calc(770 * var(--banner-vertical-base));
+  height: calc(766 * var(--banner-vertical-base));
+  animation-name: imgCircleAnimation;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(0.59, 0.64, 0.27, 0.7);
+  animation-iteration-count: infinite;
+}
+.bannerAnimation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 22.78125vw;
+  overflow: hidden;
+  transform: translateY(calc(-50% - 3.125vw));
+  /* for ie 11 */
+  transform: translateY(-50%) \9;
+}
+.bannerAnimation .line {
+  width: 0.52083333vw;
+  max-width: 10px;
+  height: 100%;
+  margin: 0;
+  animation-name: lineAnimation;
+  animation-duration: 1s;
+}
+.bannerAnimation .leftTextBoxViewport {
+  position: relative;
+  width: 63.38541667vw;
+  height: 100%;
+  padding-top: 5.05208333vw;
+  overflow: hidden;
+  color: #fff;
+  text-align: right;
+}
+.bannerAnimation .leftTextBox {
+  padding-right: 1.25vw;
+  font-weight: 400;
+  line-height: 1;
+  animation-name: leftTextBoxAnimation;
+  animation-duration: 2s;
+}
+.bannerAnimation .text1 {
+  margin-bottom: 2.70833333vw;
+  font-size: 2.34375vw;
+  font-family: "逼格锐线粗体简2.0";
+}
+.bannerAnimation .text2 {
+  font-size: 6.19791667vw;
+  line-height: 1;
+  letter-spacing: 0;
+  font-family: "逼格锐线粗体简2.0";
+}
+.bannerAnimation .text3 {
+  font-size: 3.28125vw;
+  line-height: 1;
+  letter-spacing: 0.10416667vw;
+  text-transform: uppercase;
+  font-family: "逼格锐线粗体简2.0";
+}
+.rightTextBoxViewport {
+  position: relative;
+  width: 35.98958333vw;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+.rightTextBox {
+  position: absolute;
+  bottom: 0;
+  padding-left: 1.25vw;
+  font-weight: 400;
+  line-height: 1;
+  animation-name: rightTextBoxAnimation;
+  animation-duration: 2s;
+}
+.text4 {
+  font-size: 1.45833333vw;
+}
+.text5 {
+  font-size: 1.45833333vw;
+}
+.text5 .days {
+  color: #fcf921;
+  font-weight: bold;
+  font-size: 6.25vw;
+}
+.text6 {
+  margin-top: 2.29166667vw;
+  font-size: 1.77083333vw;
+  font-family: "逼格锐线粗体简2.0";
+}
+.text7 {
+  font-size: 1.77083333vw;
+  font-family: "逼格锐线粗体简2.0";
+}
+@keyframes leftTextBoxAnimation {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+  40% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(100%, 0, 0);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes rightTextBoxAnimation {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  40% {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes lineAnimation {
+  0% {
+    transform: scale3d(1, 0, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes imgCircleAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes shapeAnimation {
+  0% {
+    transform: scale3d(0.5, 0.5, 1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale3d(0.5, 0.5, 1);
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=index.css.map */
